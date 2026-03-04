@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const AnnouncementBar = () => {
   const [visible, setVisible] = useState(true);
@@ -8,9 +9,9 @@ const AnnouncementBar = () => {
 
   return (
     <div className="bg-primary text-primary-foreground py-2.5 px-4 text-center text-sm font-medium relative">
-      <a href="#services" className="hover:underline">
+      <Link to="/our-services" className="hover:underline">
         Check Out Our Immediate Availabilities!
-      </a>
+      </Link>
       <button
         onClick={() => setVisible(false)}
         className="absolute right-4 top-1/2 -translate-y-1/2 text-primary-foreground/80 hover:text-primary-foreground"
