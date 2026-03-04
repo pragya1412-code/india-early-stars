@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone, Search, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const navItems = [
-  "Who We Help",
-  "What We Help With",
-  "Our Services",
-  "About Us",
-  "News & Events",
-  "Careers",
-  "Contact",
+  { label: "Who We Help", path: "/who-we-help" },
+  { label: "What We Help With", path: "/what-we-help-with" },
+  { label: "Our Services", path: "/our-services" },
+  { label: "About Us", path: "/about-us" },
+  { label: "News & Events", path: "/news-events" },
+  { label: "Careers", path: "/careers" },
+  { label: "Contact", path: "/contact" },
 ];
 
 const Header = () => {
@@ -17,25 +18,24 @@ const Header = () => {
 
   return (
     <header className="bg-background sticky top-0 z-50 shadow-sm">
-      {/* Top bar */}
       <div className="container flex items-center justify-between py-3">
-        <a href="/" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <span className="font-display text-2xl font-bold text-secondary">
             early<span className="text-primary">Start</span>
           </span>
           <span className="text-xs font-medium text-muted-foreground tracking-wider uppercase">India</span>
-        </a>
+        </Link>
 
         <div className="hidden lg:flex items-center gap-3">
-          <Button variant="nav" size="sm">Make a Referral</Button>
+          <Link to="/make-a-referral"><Button variant="nav" size="sm">Make a Referral</Button></Link>
           <Button variant="ghost" size="sm" className="gap-1.5">
             <Search className="h-4 w-4" /> Search
           </Button>
-          <Button variant="nav" size="sm">Find a Centre</Button>
+          <Link to="/find-a-centre"><Button variant="nav" size="sm">Find a Centre</Button></Link>
           <Button variant="ghost" size="sm" className="gap-1.5">
             <Phone className="h-4 w-4" /> 1800-XXX-XXXX
           </Button>
-          <Button variant="navFilled" size="sm">Start Your Booking</Button>
+          <Link to="/enquire"><Button variant="navFilled" size="sm">Start Your Booking</Button></Link>
         </div>
 
         <button
@@ -47,38 +47,36 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Navigation */}
       <nav className="hidden lg:block border-t border-border">
         <div className="container flex items-center gap-8 py-3">
           {navItems.map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
+            <Link
+              key={item.label}
+              to={item.path}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
-              {item}
-            </a>
+              {item.label}
+            </Link>
           ))}
         </div>
       </nav>
 
-      {/* Mobile menu */}
       {mobileOpen && (
         <div className="lg:hidden border-t border-border bg-background">
           <div className="container py-4 flex flex-col gap-3">
             {navItems.map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
+              <Link
+                key={item.label}
+                to={item.path}
                 className="text-sm font-medium text-foreground hover:text-primary py-2 border-b border-border/50"
                 onClick={() => setMobileOpen(false)}
               >
-                {item}
-              </a>
+                {item.label}
+              </Link>
             ))}
             <div className="flex flex-col gap-2 pt-3">
-              <Button variant="hero">Start Your Booking</Button>
-              <Button variant="heroOutline">Make a Referral</Button>
+              <Link to="/enquire" onClick={() => setMobileOpen(false)}><Button variant="hero" className="w-full">Start Your Booking</Button></Link>
+              <Link to="/make-a-referral" onClick={() => setMobileOpen(false)}><Button variant="heroOutline" className="w-full">Make a Referral</Button></Link>
             </div>
           </div>
         </div>
