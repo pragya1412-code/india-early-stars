@@ -14,6 +14,8 @@ import Contact from "./pages/Contact";
 import MakeAReferral from "./pages/MakeAReferral";
 import FindACentre from "./pages/FindACentre";
 import Enquire from "./pages/Enquire";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
