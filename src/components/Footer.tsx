@@ -8,10 +8,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <Link to="/" className="inline-block">
-              <span className="font-display text-2xl font-bold">
-                early<span className="text-primary">Start</span>
+              <span className="font-sans text-xl font-bold tracking-tight">
+                Early<span className="text-primary">Intervention</span>Studio
               </span>
-              <span className="text-xs font-medium tracking-wider uppercase ml-2 text-secondary-foreground/60">India</span>
             </Link>
             <p className="text-secondary-foreground/70 text-sm mt-4 leading-relaxed">
               Providing early childhood intervention services and support for young children and families across India.
