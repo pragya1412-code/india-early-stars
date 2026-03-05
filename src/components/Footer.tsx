@@ -52,10 +52,10 @@ const Footer = () => {
 
       <div className="border-t border-secondary-foreground/10">
         <div className="container py-6 flex flex-col md:flex-row justify-between items-center text-sm text-secondary-foreground/50">
-          <p>© {new Date().getFullYear()} Early Start India. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} EarlyInterventionStudio. All rights reserved.</p>
           <div className="flex gap-6 mt-3 md:mt-0">
-            <a href="#" className="hover:text-secondary-foreground transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-secondary-foreground transition-colors">Terms of Service</a>
+            <Link to="/privacy-policy" className="hover:text-secondary-foreground transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-service" className="hover:text-secondary-foreground transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ const HeroSection = () => {
             Early childhood intervention services in Delhi
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.15 }} className="text-lg text-secondary-foreground/90 mb-8">
-            Early childhood intervention services and support for young children and families across India
+            Early childhood intervention services and support for young children and families in Delhi
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="flex flex-wrap gap-4">
             <Link to="/enquire"><Button variant="hero" size="lg">Enquire Now</Button></Link>

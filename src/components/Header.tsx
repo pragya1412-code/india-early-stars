@@ -20,10 +20,9 @@ const Header = () => {
     <header className="bg-background sticky top-0 z-50 shadow-sm">
       <div className="container flex items-center justify-between py-3">
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-display text-2xl font-bold text-secondary">
-            early<span className="text-primary">Start</span>
+          <span className="font-sans text-xl font-bold text-secondary tracking-tight">
+            Early<span className="text-primary">Intervention</span>Studio
           </span>
-          <span className="text-xs font-medium text-muted-foreground tracking-wider uppercase">India</span>
         </Link>
 
         <div className="hidden lg:flex items-center gap-3">
