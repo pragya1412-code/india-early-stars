@@ -8,13 +8,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <Link to="/" className="inline-block">
-              <span className="font-display text-2xl font-bold">
-                early<span className="text-primary">Start</span>
+              <span className="font-sans text-xl font-bold tracking-tight">
+                Early<span className="text-primary">Intervention</span>Studio
               </span>
-              <span className="text-xs font-medium tracking-wider uppercase ml-2 text-secondary-foreground/60">India</span>
             </Link>
             <p className="text-secondary-foreground/70 text-sm mt-4 leading-relaxed">
-              Providing early childhood intervention services and support for young children and families across India.
+              Providing early childhood intervention services and support for young children and families in Delhi.
             </p>
           </div>
 
@@ -45,7 +44,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-secondary-foreground/70">
               <li className="flex items-start gap-2"><Phone className="h-4 w-4 mt-0.5 shrink-0" /><span>1800-XXX-XXXX</span></li>
               <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 shrink-0" /><span>info@earlystartindia.in</span></li>
-              <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0" /><span>Delhi · Mumbai · Bangalore · Chennai · Kolkata</span></li>
+              <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0" /><span>Delhi</span></li>
             </ul>
           </div>
         </div>
@@ -53,10 +52,10 @@ const Footer = () => {
 
       <div className="border-t border-secondary-foreground/10">
         <div className="container py-6 flex flex-col md:flex-row justify-between items-center text-sm text-secondary-foreground/50">
-          <p>© {new Date().getFullYear()} Early Start India. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} EarlyInterventionStudio. All rights reserved.</p>
           <div className="flex gap-6 mt-3 md:mt-0">
-            <a href="#" className="hover:text-secondary-foreground transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-secondary-foreground transition-colors">Terms of Service</a>
+            <Link to="/privacy-policy" className="hover:text-secondary-foreground transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-service" className="hover:text-secondary-foreground transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

@@ -49,7 +49,7 @@ const Contact = () => {
               <div className="flex items-start gap-3 text-sm text-muted-foreground"><Phone className="h-4 w-4 mt-0.5 text-primary shrink-0" /> 1800-XXX-XXXX (Toll Free)</div>
               <div className="flex items-start gap-3 text-sm text-muted-foreground"><Mail className="h-4 w-4 mt-0.5 text-primary shrink-0" /> info@earlystartindia.in</div>
               <div className="flex items-start gap-3 text-sm text-muted-foreground"><Clock className="h-4 w-4 mt-0.5 text-primary shrink-0" /> Mon–Sat, 9:00 AM – 6:00 PM IST</div>
-              <div className="flex items-start gap-3 text-sm text-muted-foreground"><MapPin className="h-4 w-4 mt-0.5 text-primary shrink-0" /> Delhi · Mumbai · Bangalore · Chennai · Kolkata</div>
+              <div className="flex items-start gap-3 text-sm text-muted-foreground"><MapPin className="h-4 w-4 mt-0.5 text-primary shrink-0" /> Delhi</div>
             </div>
           </motion.div>
         </div>

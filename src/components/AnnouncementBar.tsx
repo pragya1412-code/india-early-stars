@@ -10,7 +10,7 @@ const AnnouncementBar = () => {
   return (
     <div className="bg-primary text-primary-foreground py-2.5 px-4 text-center text-sm font-medium relative">
       <Link to="/our-services" className="hover:underline">
-        Check Out Our Immediate Availabilities!
+        Join Our Waitlist!
       </Link>
       <button
         onClick={() => setVisible(false)}

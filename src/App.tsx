@@ -14,6 +14,8 @@ import Contact from "./pages/Contact";
 import MakeAReferral from "./pages/MakeAReferral";
 import FindACentre from "./pages/FindACentre";
 import Enquire from "./pages/Enquire";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +38,8 @@ const App = () => (
           <Route path="/make-a-referral" element={<MakeAReferral />} />
           <Route path="/find-a-centre" element={<FindACentre />} />
           <Route path="/enquire" element={<Enquire />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
