@@ -38,6 +38,8 @@ const App = () => (
           <Route path="/make-a-referral" element={<MakeAReferral />} />
           <Route path="/find-a-centre" element={<FindACentre />} />
           <Route path="/enquire" element={<Enquire />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
