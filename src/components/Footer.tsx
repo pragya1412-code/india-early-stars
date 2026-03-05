@@ -44,7 +44,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-secondary-foreground/70">
               <li className="flex items-start gap-2"><Phone className="h-4 w-4 mt-0.5 shrink-0" /><span>1800-XXX-XXXX</span></li>
               <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 shrink-0" /><span>info@earlystartindia.in</span></li>
-              <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0" /><span>Delhi · Mumbai · Bangalore · Chennai · Kolkata</span></li>
+              <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0" /><span>Delhi</span></li>
             </ul>
           </div>
         </div>
