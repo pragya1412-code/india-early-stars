@@ -13,7 +13,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-secondary-foreground/70 text-sm mt-4 leading-relaxed">
-              Providing early childhood intervention services and support for young children and families across India.
+              Providing early childhood intervention services and support for young children and families in Delhi.
             </p>
           </div>
 
