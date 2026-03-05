@@ -12,11 +12,11 @@ const HeroSection = () => {
       </div>
       <div className="container relative z-10 py-16 lg:py-24">
         <div className="max-w-xl">
-          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-4xl lg:text-5xl font-display font-bold text-secondary-foreground leading-tight mb-4">
-            Early childhood intervention services in Delhi
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-4xl lg:text-5xl font-display font-bold text-secondary-foreground leading-tight mb-4">Early Intervention Services in Delhi
+
           </motion.h1>
-          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.15 }} className="text-lg text-secondary-foreground/90 mb-8">
-            Early childhood intervention services and support for young children and families in Delhi
+          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.15 }} className="text-lg text-secondary-foreground/90 mb-8">Early Intervention Services and support for neurodivergent children in Delhi.
+
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="flex flex-wrap gap-4">
             <Link to="/enquire"><Button variant="hero" size="lg">Enquire Now</Button></Link>
@@ -24,8 +24,8 @@ const HeroSection = () => {
           </motion.div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
