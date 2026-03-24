@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,34 +7,34 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 220 30% 18%;
+    --foreground: 210 30% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 30% 18%;
+    --card-foreground: 210 30% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 30% 18%;
+    --popover-foreground: 210 30% 15%;
 
-    --primary: 330 72% 45%;
+    --primary: 174 62% 40%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 60% 25%;
+    --secondary: 210 55% 25%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 20% 96%;
-    --muted-foreground: 220 10% 46%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 10% 46%;
 
-    --accent: 330 72% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 45 90% 55%;
+    --accent-foreground: 210 30% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 15% 90%;
-    --input: 220 15% 90%;
-    --ring: 330 72% 45%;
+    --border: 210 15% 90%;
+    --input: 210 15% 90%;
+    --ring: 174 62% 40%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -42,39 +42,41 @@
     --sidebar-primary-foreground: 0 0% 98%;
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-border: 210 13% 91%;
+    --sidebar-ring: 174 62% 40%;
 
     /* Custom tokens */
-    --hero-overlay: 220 60% 15%;
-    --section-warm: 30 50% 97%;
-    --section-cool: 220 30% 97%;
-    --nav-dark: 220 60% 20%;
-    --announcement-bg: 330 72% 45%;
+    --hero-overlay: 210 55% 15%;
+    --section-warm: 45 60% 97%;
+    --section-cool: 174 30% 97%;
+    --nav-dark: 210 55% 20%;
+    --announcement-bg: 174 62% 40%;
+    --whatsapp: 142 70% 40%;
+    --soft-blue: 205 65% 55%;
 
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
   }
 
   .dark {
-    --background: 220 30% 8%;
+    --background: 210 30% 8%;
     --foreground: 210 40% 98%;
-    --card: 220 30% 12%;
+    --card: 210 30% 12%;
     --card-foreground: 210 40% 98%;
-    --popover: 220 30% 12%;
+    --popover: 210 30% 12%;
     --popover-foreground: 210 40% 98%;
-    --primary: 330 72% 55%;
+    --primary: 174 62% 50%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 220 50% 35%;
+    --secondary: 210 50% 35%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 220 20% 18%;
+    --muted: 210 20% 18%;
     --muted-foreground: 215 20% 65.1%;
-    --accent: 330 72% 55%;
+    --accent: 45 90% 55%;
     --accent-foreground: 210 40% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 220 20% 22%;
-    --input: 220 20% 22%;
-    --ring: 330 72% 55%;
+    --border: 210 20% 22%;
+    --input: 210 20% 22%;
+    --ring: 174 62% 50%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -82,7 +84,7 @@
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 174 62% 50%;
   }
 }
 
@@ -96,7 +98,8 @@
   }
 
   h1, h2, h3, h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
   }
 }
 

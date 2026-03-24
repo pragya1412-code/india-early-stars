@@ -7,15 +7,15 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "1.25rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1280px",
       },
     },
     extend: {
       fontFamily: {
-        sans: ["DM Sans", "sans-serif"],
-        display: ["Playfair Display", "serif"],
+        sans: ["Nunito", "sans-serif"],
+        display: ["Nunito", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -65,6 +65,8 @@ export default {
         "announcement": "hsl(var(--announcement-bg))",
         "section-warm": "hsl(var(--section-warm))",
         "section-cool": "hsl(var(--section-cool))",
+        "whatsapp": "hsl(var(--whatsapp))",
+        "soft-blue": "hsl(var(--soft-blue))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -84,11 +86,16 @@ export default {
           "0%": { opacity: "0", transform: "translateY(20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        "pulse-gentle": {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-up": "fade-up 0.6s ease-out forwards",
+        "pulse-gentle": "pulse-gentle 2s ease-in-out infinite",
       },
     },
   },
