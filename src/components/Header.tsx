@@ -1,17 +1,18 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Phone, Search, Menu, X } from "lucide-react";
+import { Phone, Menu, X, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const navItems = [
-  { label: "Who We Help", path: "/who-we-help" },
-  { label: "What We Help With", path: "/what-we-help-with" },
   { label: "Our Services", path: "/our-services" },
+  { label: "AI Solutions", path: "/ai-solutions" },
+  { label: "Screening", path: "/screening" },
   { label: "About Us", path: "/about-us" },
-  { label: "News & Events", path: "/news-events" },
-  { label: "Careers", path: "/careers" },
   { label: "Contact", path: "/contact" },
 ];
+
+const WHATSAPP_NUMBER = "919999999999";
+const WHATSAPP_MSG = encodeURIComponent("Hi, I want to know more about autism therapy for my child.");
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -20,21 +21,35 @@ const Header = () => {
     <header className="bg-background sticky top-0 z-50 shadow-sm">
       <div className="container flex items-center justify-between py-3">
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-sans text-xl font-bold text-secondary tracking-tight">
+          <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
+            <span className="text-primary-foreground font-extrabold text-lg">E</span>
+          </div>
+          <span className="font-sans text-lg font-extrabold text-foreground tracking-tight">
             Early<span className="text-primary">Intervention</span>Studio
           </span>
         </Link>
 
+        <nav className="hidden lg:flex items-center gap-6">
+          {navItems.map((item) => (
+            <Link
+              key={item.label}
+              to={item.path}
+              className="text-sm font-bold text-foreground/80 hover:text-primary transition-colors"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+
         <div className="hidden lg:flex items-center gap-3">
-          <Link to="/make-a-referral"><Button variant="nav" size="sm">Make a Referral</Button></Link>
-          <Button variant="ghost" size="sm" className="gap-1.5">
-            <Search className="h-4 w-4" /> Search
-          </Button>
-          <Link to="/find-a-centre"><Button variant="nav" size="sm">Find a Centre</Button></Link>
-          <Button variant="ghost" size="sm" className="gap-1.5">
-            <Phone className="h-4 w-4" /> 1800-XXX-XXXX
-          </Button>
-          <Link to="/enquire"><Button variant="navFilled" size="sm">Start Your Booking</Button></Link>
+          <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`} target="_blank" rel="noopener noreferrer">
+            <Button variant="whatsapp" size="sm" className="gap-1.5">
+              <MessageCircle className="h-4 w-4" /> WhatsApp Us
+            </Button>
+          </a>
+          <Link to="/book-assessment">
+            <Button variant="hero" size="sm">Book Assessment</Button>
+          </Link>
         </div>
 
         <button
@@ -46,20 +61,6 @@ const Header = () => {
         </button>
       </div>
 
-      <nav className="hidden lg:block border-t border-border">
-        <div className="container flex items-center gap-8 py-3">
-          {navItems.map((item) => (
-            <Link
-              key={item.label}
-              to={item.path}
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </div>
-      </nav>
-
       {mobileOpen && (
         <div className="lg:hidden border-t border-border bg-background">
           <div className="container py-4 flex flex-col gap-3">
@@ -67,15 +68,21 @@ const Header = () => {
               <Link
                 key={item.label}
                 to={item.path}
-                className="text-sm font-medium text-foreground hover:text-primary py-2 border-b border-border/50"
+                className="text-sm font-bold text-foreground hover:text-primary py-2.5 border-b border-border/50"
                 onClick={() => setMobileOpen(false)}
               >
                 {item.label}
               </Link>
             ))}
             <div className="flex flex-col gap-2 pt-3">
-              <Link to="/enquire" onClick={() => setMobileOpen(false)}><Button variant="hero" className="w-full">Start Your Booking</Button></Link>
-              <Link to="/make-a-referral" onClick={() => setMobileOpen(false)}><Button variant="heroOutline" className="w-full">Make a Referral</Button></Link>
+              <Link to="/book-assessment" onClick={() => setMobileOpen(false)}>
+                <Button variant="hero" className="w-full">Book Assessment</Button>
+              </Link>
+              <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`} target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>
+                <Button variant="whatsapp" className="w-full gap-1.5">
+                  <MessageCircle className="h-4 w-4" /> WhatsApp Us
+                </Button>
+              </a>
             </div>
           </div>
         </div>

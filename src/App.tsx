@@ -4,16 +4,13 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import WhoWeHelp from "./pages/WhoWeHelp";
-import WhatWeHelpWith from "./pages/WhatWeHelpWith";
 import OurServices from "./pages/OurServices";
 import AboutUs from "./pages/AboutUs";
-import NewsEvents from "./pages/NewsEvents";
-import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
-import MakeAReferral from "./pages/MakeAReferral";
-import FindACentre from "./pages/FindACentre";
-import Enquire from "./pages/Enquire";
+import Screening from "./pages/Screening";
+import AISolutions from "./pages/AISolutions";
+import BookAssessment from "./pages/BookAssessment";
+import Careers from "./pages/Careers";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
@@ -28,16 +25,13 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/who-we-help" element={<WhoWeHelp />} />
-          <Route path="/what-we-help-with" element={<WhatWeHelpWith />} />
           <Route path="/our-services" element={<OurServices />} />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/news-events" element={<NewsEvents />} />
-          <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/make-a-referral" element={<MakeAReferral />} />
-          <Route path="/find-a-centre" element={<FindACentre />} />
-          <Route path="/enquire" element={<Enquire />} />
+          <Route path="/screening" element={<Screening />} />
+          <Route path="/ai-solutions" element={<AISolutions />} />
+          <Route path="/book-assessment" element={<BookAssessment />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="*" element={<NotFound />} />
