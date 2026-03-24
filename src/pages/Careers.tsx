@@ -1,37 +1,75 @@
 import Layout from "@/components/Layout";
-import PageHero from "@/components/PageHero";
 import { motion } from "framer-motion";
-import { MapPin, Briefcase } from "lucide-react";
+import careersImg from "@/assets/careers.jpg";
 import { Button } from "@/components/ui/button";
+import { MessageCircle } from "lucide-react";
+
+const WHATSAPP_NUMBER = "919999999999";
 
 const openings = [
-  { title: "Speech Therapist", location: "Mumbai", type: "Full-time" },
-  { title: "Occupational Therapist", location: "Delhi", type: "Full-time" },
-  { title: "Child Psychologist", location: "Bangalore", type: "Full-time" },
-  { title: "Physiotherapist", location: "Chennai", type: "Full-time" },
-  { title: "Dietitian / Nutritionist", location: "Kolkata", type: "Part-time" },
-  { title: "Telehealth Therapist", location: "Remote (India)", type: "Contract" },
+  { title: "ABA Therapist", type: "Full-time", location: "South Delhi" },
+  { title: "Speech-Language Pathologist", type: "Full-time", location: "South Delhi" },
+  { title: "Occupational Therapist", type: "Full-time / Part-time", location: "South Delhi" },
+  { title: "Child Psychologist", type: "Full-time", location: "South Delhi" },
 ];
 
 const Careers = () => (
   <Layout>
-    <PageHero title="Careers" subtitle="Join our team for a brighter future in allied health where you can make a real difference." />
-    <section className="py-16">
-      <div className="container max-w-3xl mx-auto">
-        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-muted-foreground text-lg mb-10 leading-relaxed">
-          At Early Start India, we're looking for passionate therapists and professionals who want to change lives. We offer competitive salaries, professional development, and a supportive team culture.
+    <section className="py-16 lg:py-20 bg-secondary text-secondary-foreground">
+      <div className="container">
+        <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-3xl lg:text-5xl font-extrabold mb-4">
+          Careers
+        </motion.h1>
+        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-lg text-secondary-foreground/80 max-w-2xl">
+          Join our team of passionate therapists making a real difference in children's lives.
         </motion.p>
+      </div>
+    </section>
+
+    <section className="py-16">
+      <div className="container grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+        <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+          <img src={careersImg} alt="Our therapy team" className="rounded-2xl shadow-lg w-full" loading="lazy" width={800} height={600} />
+        </motion.div>
+        <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+          <h2 className="text-2xl font-extrabold text-foreground mb-4">Why Work With Us?</h2>
+          <ul className="space-y-3 text-muted-foreground">
+            <li className="flex items-start gap-2"><span className="text-primary font-bold">✓</span> Work with cutting-edge AI therapy tools</li>
+            <li className="flex items-start gap-2"><span className="text-primary font-bold">✓</span> Competitive salary and growth opportunities</li>
+            <li className="flex items-start gap-2"><span className="text-primary font-bold">✓</span> Supportive, collaborative team environment</li>
+            <li className="flex items-start gap-2"><span className="text-primary font-bold">✓</span> Continuous professional development training</li>
+            <li className="flex items-start gap-2"><span className="text-primary font-bold">✓</span> Make a meaningful impact on children's lives</li>
+          </ul>
+        </motion.div>
+      </div>
+    </section>
+
+    <section className="py-16 section-cool">
+      <div className="container max-w-3xl mx-auto">
+        <h2 className="text-2xl font-extrabold text-foreground mb-8 text-center">Current Openings</h2>
         <div className="space-y-4">
           {openings.map((job, i) => (
-            <motion.div key={job.title + job.location} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="bg-card rounded-xl p-5 border border-border/50 shadow-sm flex items-center justify-between flex-wrap gap-4">
+            <motion.div
+              key={job.title}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="bg-card rounded-xl p-6 border border-border/50 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4"
+            >
               <div>
-                <h3 className="text-base font-semibold text-foreground">{job.title}</h3>
-                <div className="flex items-center gap-4 text-muted-foreground text-sm mt-1">
-                  <span className="flex items-center gap-1"><MapPin className="h-3.5 w-3.5" /> {job.location}</span>
-                  <span className="flex items-center gap-1"><Briefcase className="h-3.5 w-3.5" /> {job.type}</span>
-                </div>
+                <h3 className="font-bold text-foreground">{job.title}</h3>
+                <p className="text-muted-foreground text-sm">{job.type} · {job.location}</p>
               </div>
-              <Button variant="nav" size="sm">Apply Now</Button>
+              <a
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi, I'm interested in the ${job.title} position.`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="heroOutline" size="sm" className="gap-1.5">
+                  <MessageCircle className="h-4 w-4" /> Apply via WhatsApp
+                </Button>
+              </a>
             </motion.div>
           ))}
         </div>
