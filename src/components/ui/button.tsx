@@ -5,22 +5,23 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-bold ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium tracking-tight ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm",
+        default: "bg-ink text-cream hover:bg-ink/90 shadow-soft",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent/10 hover:text-accent-foreground",
+        outline: "border border-ink/15 bg-transparent text-ink hover:bg-ink hover:text-cream",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/85",
+        ghost: "hover:bg-ink/5 text-ink",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full font-extrabold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all",
-        heroOutline: "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground rounded-full font-extrabold transition-all",
-        whatsapp: "bg-whatsapp text-primary-foreground hover:bg-whatsapp/90 rounded-full font-extrabold shadow-lg hover:shadow-xl transition-all",
-        nav: "border border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-full font-semibold transition-all",
-        navFilled: "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full font-bold transition-all",
-        accent: "bg-accent text-accent-foreground hover:bg-accent/90 rounded-full font-extrabold shadow-md transition-all",
+        hero: "bg-ink text-cream hover:bg-ink/90 shadow-soft hover:shadow-elev hover:-translate-y-0.5",
+        heroOutline: "border border-ink/20 bg-transparent text-ink hover:bg-ink hover:text-cream",
+        whatsapp: "bg-whatsapp text-white hover:bg-whatsapp/90 shadow-soft",
+        nav: "border border-ink/15 text-ink hover:bg-ink hover:text-cream",
+        navFilled: "bg-ink text-cream hover:bg-ink/85",
+        accent: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-soft",
+        cream: "bg-cream text-ink hover:bg-cream/85 shadow-soft",
       },
       size: {
         default: "h-10 px-5 py-2",

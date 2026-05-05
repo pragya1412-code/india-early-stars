@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
 
-const WHATSAPP_NUMBER = "919999999999";
-const WHATSAPP_MSG = encodeURIComponent("Hi, I want to know more about autism therapy for my child.");
+const WHATSAPP_NUMBER = "919810001000";
+const WHATSAPP_MSG = encodeURIComponent("Hello — I'd like to learn more about Studio éveil for my child.");
 
 const WhatsAppFloat = () => {
   return (
@@ -9,10 +9,14 @@ const WhatsAppFloat = () => {
       href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 bg-whatsapp text-primary-foreground rounded-full p-4 shadow-2xl hover:shadow-xl hover:scale-110 transition-all animate-pulse-gentle"
+      className="fixed bottom-6 right-6 z-50 group"
       aria-label="Chat on WhatsApp"
     >
-      <MessageCircle className="h-7 w-7" />
+      <span className="absolute inset-0 rounded-full bg-whatsapp/30 animate-ping" />
+      <span className="relative flex items-center gap-2 bg-ink text-cream rounded-full pl-3.5 pr-5 py-3 shadow-elev hover:bg-whatsapp transition-all duration-500">
+        <MessageCircle className="h-4 w-4" />
+        <span className="text-xs tracking-wide">WhatsApp us</span>
+      </span>
     </a>
   );
 };
