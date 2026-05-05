@@ -152,4 +152,10 @@
 @layer utilities {
   .text-balance { text-wrap: balance; }
   .text-pretty { text-wrap: pretty; }
+  .section-warm { background-color: hsl(var(--cream)); }
+  .section-cool { background-color: hsl(var(--muted)); }
+  .bg-section-cool { background-color: hsl(var(--muted)); }
+  .bg-section-warm { background-color: hsl(var(--cream)); }
+  .bg-soft-blue { background-color: hsl(var(--sky)); }
+  .text-soft-blue { color: hsl(var(--sky)); }
 }
