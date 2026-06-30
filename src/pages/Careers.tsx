@@ -7,10 +7,10 @@ import { MessageCircle } from "lucide-react";
 const WHATSAPP_NUMBER = "919999999999";
 
 const openings = [
-  { title: "ABA Therapist", type: "Full-time", location: "South Delhi" },
-  { title: "Speech-Language Pathologist", type: "Full-time", location: "South Delhi" },
-  { title: "Occupational Therapist", type: "Full-time / Part-time", location: "South Delhi" },
-  { title: "Child Psychologist", type: "Full-time", location: "South Delhi" },
+  { title: "ABA Therapist", type: "Full-time", location: "India" },
+  { title: "Speech-Language Pathologist", type: "Full-time", location: "India" },
+  { title: "Occupational Therapist", type: "Full-time / Part-time", location: "India" },
+  { title: "Child Psychologist", type: "Full-time", location: "India" },
 ];
 
 const Careers = () => (

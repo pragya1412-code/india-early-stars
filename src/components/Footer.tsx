@@ -11,16 +11,16 @@ const Footer = () => {
               A quieter place to begin your child's biggest steps.
             </h3>
             <p className="text-cream/60 text-sm mt-6 max-w-sm leading-relaxed">
-              Studio éveil is a private early-intervention practice in Delhi for families seeking thoughtful, evidence-led care.
+              Early Intervention Studio is a private early-intervention practice for families seeking thoughtful, evidence-led care.
             </p>
           </div>
 
           <div className="lg:col-span-3">
             <p className="eyebrow text-cream/50 mb-5">Visit</p>
             <ul className="space-y-3 text-sm text-cream/75">
-              <li className="flex items-start gap-2.5"><MapPin className="h-4 w-4 mt-0.5 shrink-0 text-accent" /><span>14 Aurobindo Marg, South Delhi 110016</span></li>
+              <li className="flex items-start gap-2.5"><MapPin className="h-4 w-4 mt-0.5 shrink-0 text-accent" /><span>India</span></li>
               <li className="flex items-start gap-2.5"><Phone className="h-4 w-4 mt-0.5 shrink-0 text-accent" /><span>+91 98 1000 1000</span></li>
-              <li className="flex items-start gap-2.5"><Mail className="h-4 w-4 mt-0.5 shrink-0 text-accent" /><span>hello@studio-eveil.in</span></li>
+              <li className="flex items-start gap-2.5"><Mail className="h-4 w-4 mt-0.5 shrink-0 text-accent" /><span>hello@earlyinterventionstudio.in</span></li>
             </ul>
           </div>
 
@@ -47,7 +47,7 @@ const Footer = () => {
 
       <div className="border-t border-cream/10">
         <div className="container py-6 flex flex-col md:flex-row justify-between items-center text-xs text-cream/45 gap-3">
-          <p>© {new Date().getFullYear()} Studio éveil — Early Intervention, Delhi.</p>
+          <p>© {new Date().getFullYear()} Early Intervention Studio</p>
           <div className="flex gap-6">
             <Link to="/privacy-policy" className="hover:text-cream/80">Privacy</Link>
             <Link to="/terms-of-service" className="hover:text-cream/80">Terms</Link>

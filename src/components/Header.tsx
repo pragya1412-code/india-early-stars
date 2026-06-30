@@ -30,8 +30,8 @@ const Header = () => {
     >
       <div className="container flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-2.5 group">
-          <span className="serif text-[22px] tracking-tight text-ink leading-none">
-            Studio<span className="italic font-light text-primary">éveil</span>
+          <span className="serif text-[20px] tracking-tight text-ink leading-none">
+            Early Intervention Studio
           </span>
         </Link>
 

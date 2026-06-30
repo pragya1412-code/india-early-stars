@@ -78,20 +78,20 @@ const Contact = () => {
               </div>
               <div className="flex items-start gap-3 text-sm text-muted-foreground"><Mail className="h-4 w-4 mt-0.5 text-primary shrink-0" /> hello@earlyinterventionstudio.in</div>
               <div className="flex items-start gap-3 text-sm text-muted-foreground"><Clock className="h-4 w-4 mt-0.5 text-primary shrink-0" /> Mon–Sat, 9:00 AM – 6:00 PM IST</div>
-              <div className="flex items-start gap-3 text-sm text-muted-foreground"><MapPin className="h-4 w-4 mt-0.5 text-primary shrink-0" /> South Delhi, New Delhi, India</div>
+              <div className="flex items-start gap-3 text-sm text-muted-foreground"><MapPin className="h-4 w-4 mt-0.5 text-primary shrink-0" /> India</div>
             </div>
 
             {/* Google Maps Embed */}
             <div className="rounded-2xl overflow-hidden border border-border/50 shadow-sm">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.70391917835!2d77.04417347186538!3d28.52758200617608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30773123.20915617!2d61.024585!3d20.593684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m3!1s0x0%3A0x0!2zMjDCsDM1JzM3LjMiTiA2McKwMDEnMjguNSJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                 width="100%"
                 height="250"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Early Intervention Studio location in Delhi"
+                title="Early Intervention Studio location in India"
               />
             </div>
           </motion.div>

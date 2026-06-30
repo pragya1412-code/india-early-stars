@@ -112,7 +112,7 @@ const HeroSection = () => {
             className="eyebrow mb-6 inline-flex items-center gap-2"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-primary animate-breathe" />
-            Clinical early intervention · Pan-India
+            Clinical early intervention
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 16 }}
@@ -120,8 +120,8 @@ const HeroSection = () => {
             transition={{ duration: 1, delay: 0.1 }}
             className="serif text-[40px] md:text-[58px] lg:text-[68px] leading-[1.04] text-ink text-balance"
           >
-            Autism doesn't wait. <br />
-            <em className="italic font-light text-primary">Neither should a diagnosis.</em>
+            Not every child speaks in words. <br />
+            <em className="italic font-light text-primary">But every child deserves to be heard — early.</em>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 16 }}
@@ -129,7 +129,7 @@ const HeroSection = () => {
             transition={{ duration: 1, delay: 0.25 }}
             className="text-ink/70 text-lg md:text-xl mt-7 max-w-2xl leading-relaxed"
           >
-            Studio éveil is a clinical early-intervention practice for children 1–10 with autism and developmental delays. Evidence-led therapy, delivered with the urgency the science demands.
+            Early Intervention Studio is a clinical early-intervention practice for children 1–10 with autism and developmental delays. Evidence-led therapy, delivered with the urgency the science demands.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 16 }}

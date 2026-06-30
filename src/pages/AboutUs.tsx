@@ -47,7 +47,7 @@ const AboutUs = () => (
             Early Intervention Studio was founded with a single belief: every child deserves the best possible start in life. We combine world-class clinical expertise with AI-powered technology to deliver early intervention services that are personalized, effective, and accessible.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Based in Delhi, we serve families across the NCR region with in-person and telehealth therapy. Our team of certified therapists is trained in internationally recognized methods including ABA, ESDM, and evidence-based speech and occupational therapy.
+            We serve families across India with in-person and telehealth therapy. Our team of certified therapists is trained in internationally recognized methods including ABA, ESDM, and evidence-based speech and occupational therapy.
           </p>
         </motion.div>
       </div>
