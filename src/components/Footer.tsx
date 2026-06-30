@@ -11,7 +11,7 @@ const Footer = () => {
               A quieter place to begin your child's biggest steps.
             </h3>
             <p className="text-cream/60 text-sm mt-6 max-w-sm leading-relaxed">
-              Studio éveil is a private early-intervention practice in Delhi for families seeking thoughtful, evidence-led care.
+              Early Intervention Studio is a private early-intervention practice for families seeking thoughtful, evidence-led care.
             </p>
           </div>
 
@@ -47,7 +47,7 @@ const Footer = () => {
 
       <div className="border-t border-cream/10">
         <div className="container py-6 flex flex-col md:flex-row justify-between items-center text-xs text-cream/45 gap-3">
-          <p>© {new Date().getFullYear()} Studio éveil — Early Intervention, Delhi.</p>
+          <p>© {new Date().getFullYear()} Early Intervention Studio</p>
           <div className="flex gap-6">
             <Link to="/privacy-policy" className="hover:text-cream/80">Privacy</Link>
             <Link to="/terms-of-service" className="hover:text-cream/80">Terms</Link>
