@@ -1,5 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
+import logoMark from "@/assets/logo-mark.png.asset.json";
+
 
 const Footer = () => {
   return (
