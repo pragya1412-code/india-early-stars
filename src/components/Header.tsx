@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
+import logoFull from "@/assets/logo-full.png.asset.json";
+import logoMark from "@/assets/logo-mark.png.asset.json";
+
 
 const navItems = [
   { label: "Philosophy", path: "/about-us" },
