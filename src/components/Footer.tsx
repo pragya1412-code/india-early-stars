@@ -1,5 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
+import logoMark from "@/assets/logo-mark.png.asset.json";
+
 
 const Footer = () => {
   return (
@@ -7,13 +9,25 @@ const Footer = () => {
       <div className="container py-20">
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
-            <h3 className="serif text-3xl md:text-4xl text-cream leading-tight max-w-md text-balance">
+            <div className="flex items-center gap-4 mb-6">
+              <img
+                src={logoMark.url}
+                alt=""
+                aria-hidden="true"
+                className="h-14 w-auto"
+                width="450"
+                height="487"
+              />
+              <span className="serif text-xl text-cream leading-tight">Early Intervention Studio</span>
+            </div>
+            <h3 className="serif text-2xl md:text-3xl text-cream leading-tight max-w-md text-balance">
               A quieter place to begin your child's biggest steps.
             </h3>
             <p className="text-cream/60 text-sm mt-6 max-w-sm leading-relaxed">
-              Early Intervention Studio is a private early-intervention practice for families seeking thoughtful, evidence-led care.
+              A private early-intervention practice for families seeking thoughtful, evidence-led care.
             </p>
           </div>
+
 
           <div className="lg:col-span-3">
             <p className="eyebrow text-cream/50 mb-5">Visit</p>

@@ -6,55 +6,55 @@
 
 @layer base {
   :root {
-    /* Premium muted palette - off-white canvas, sage primary, blush accent, deep ink text */
-    --background: 36 30% 97%;
-    --foreground: 200 25% 14%;
+    /* Palette harmonized to logo: deep teal, sage, warm beige, peach ring, ink */
+    --background: 36 35% 96%;
+    --foreground: 200 30% 14%;
 
     --card: 0 0% 100%;
-    --card-foreground: 200 25% 14%;
+    --card-foreground: 200 30% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 200 25% 14%;
+    --popover-foreground: 200 30% 14%;
 
-    /* Muted sage */
-    --primary: 155 22% 38%;
-    --primary-foreground: 36 30% 97%;
+    /* Deep teal (from darkest leaf) */
+    --primary: 184 45% 24%;
+    --primary-foreground: 36 35% 96%;
 
     /* Soft deep ink */
-    --secondary: 200 25% 18%;
-    --secondary-foreground: 36 30% 97%;
+    --secondary: 200 30% 18%;
+    --secondary-foreground: 36 35% 96%;
 
-    --muted: 35 20% 93%;
-    --muted-foreground: 200 12% 42%;
+    --muted: 36 22% 92%;
+    --muted-foreground: 200 14% 40%;
 
-    /* Warm blush accent */
-    --accent: 18 55% 80%;
-    --accent-foreground: 200 25% 18%;
+    /* Warm peach ring (from logo halo) */
+    --accent: 22 65% 78%;
+    --accent-foreground: 200 30% 16%;
 
-    --destructive: 0 60% 55%;
-    --destructive-foreground: 36 30% 97%;
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 36 35% 96%;
 
-    --border: 35 18% 88%;
-    --input: 35 18% 88%;
-    --ring: 155 22% 38%;
+    --border: 36 20% 87%;
+    --input: 36 20% 87%;
+    --ring: 184 45% 24%;
 
     --radius: 1rem;
 
-    /* Custom premium tokens */
-    --cream: 36 35% 95%;
-    --blush: 18 55% 88%;
-    --sage: 155 22% 78%;
-    --sage-deep: 155 22% 38%;
-    --sky: 205 45% 85%;
-    --butter: 42 60% 88%;
-    --ink: 200 25% 14%;
+    /* Custom premium tokens - all pulled from the logo */
+    --cream: 36 38% 94%;
+    --blush: 30 45% 82%;        /* warm beige leaf */
+    --sage: 95 18% 62%;         /* olive/sage leaf */
+    --sage-deep: 175 35% 26%;   /* deep teal leaf */
+    --sky: 190 30% 82%;
+    --butter: 22 65% 84%;       /* soft peach */
+    --ink: 200 30% 14%;
     --whatsapp: 142 50% 42%;
 
-    --gradient-warm: linear-gradient(135deg, hsl(var(--cream)), hsl(var(--blush) / 0.6));
-    --gradient-calm: linear-gradient(160deg, hsl(var(--sky) / 0.5), hsl(var(--sage) / 0.4));
-    --gradient-hero: radial-gradient(ellipse at 20% 30%, hsl(var(--blush) / 0.55), transparent 55%),
-                     radial-gradient(ellipse at 80% 70%, hsl(var(--sage) / 0.5), transparent 55%),
-                     radial-gradient(ellipse at 60% 20%, hsl(var(--sky) / 0.45), transparent 50%),
+    --gradient-warm: linear-gradient(135deg, hsl(var(--cream)), hsl(var(--blush) / 0.55));
+    --gradient-calm: linear-gradient(160deg, hsl(var(--sage) / 0.35), hsl(var(--sage-deep) / 0.25));
+    --gradient-hero: radial-gradient(ellipse at 20% 30%, hsl(var(--butter) / 0.55), transparent 55%),
+                     radial-gradient(ellipse at 80% 70%, hsl(var(--sage) / 0.45), transparent 55%),
+                     radial-gradient(ellipse at 60% 20%, hsl(var(--sage-deep) / 0.25), transparent 55%),
                      hsl(var(--cream));
 
     --shadow-soft: 0 10px 40px -20px hsl(var(--ink) / 0.18);
@@ -62,14 +62,15 @@
 
     --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
 
-    --sidebar-background: 36 30% 97%;
-    --sidebar-foreground: 200 25% 14%;
-    --sidebar-primary: 155 22% 38%;
-    --sidebar-primary-foreground: 36 30% 97%;
-    --sidebar-accent: 35 20% 93%;
-    --sidebar-accent-foreground: 200 25% 14%;
-    --sidebar-border: 35 18% 88%;
-    --sidebar-ring: 155 22% 38%;
+    --sidebar-background: 36 35% 96%;
+    --sidebar-foreground: 200 30% 14%;
+    --sidebar-primary: 184 45% 24%;
+    --sidebar-primary-foreground: 36 35% 96%;
+    --sidebar-accent: 36 22% 92%;
+    --sidebar-accent-foreground: 200 30% 14%;
+    --sidebar-border: 36 20% 87%;
+    --sidebar-ring: 184 45% 24%;
+
   }
 
   .dark {
