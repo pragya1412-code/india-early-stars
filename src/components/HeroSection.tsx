@@ -21,7 +21,7 @@ const stats: Stat[] = [
   {
     number: "18 million",
     prompt: "How many lives does this touch?",
-    reveal: "Indians live with autism today — most undiagnosed, most unsupported.",
+    reveal: "Indians live with autism today - most undiagnosed, most unsupported.",
     source: "WHO & Ministry of Health estimates",
   },
   {
@@ -121,7 +121,7 @@ const HeroSection = () => {
             className="serif text-[40px] md:text-[58px] lg:text-[68px] leading-[1.04] text-ink text-balance"
           >
             Not every child speaks in words. <br />
-            <em className="italic font-light text-primary">But every child deserves to be heard — early.</em>
+            <em className="italic font-light text-primary">But every child deserves to be heard - early.</em>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 16 }}
@@ -148,7 +148,7 @@ const HeroSection = () => {
           </motion.div>
         </div>
 
-        {/* Numbers — reveal the number */}
+        {/* Numbers - reveal the number */}
         <div className="mt-20 lg:mt-28">
           <motion.div
             initial={{ opacity: 0, y: 16 }}

@@ -19,7 +19,7 @@ const map: Record<string, { name: string; why: string }> = {
   speech: { name: "Speech-Language Therapy", why: "Builds expressive language, comprehension and conversational turn-taking." },
   social: { name: "Social Cognition Group", why: "Small peer cohorts that nurture friendship, sharing, and reading social cues." },
   sensory: { name: "Sensory Integration (OT)", why: "Calms an overwhelmed nervous system through graded, playful sensory experiences." },
-  behavior: { name: "Naturalistic ABA", why: "Replaces rigid loops with flexible, meaningful behaviours — within real life." },
+  behavior: { name: "Naturalistic ABA", why: "Replaces rigid loops with flexible, meaningful behaviours - within real life." },
   play: { name: "DIR/Floortime", why: "Joins your child where they are and gently expands shared, joyful play." },
   school: { name: "School Readiness", why: "A bridge program preparing children for inclusive classroom life." },
   feeding: { name: "Feeding & Routines", why: "Reduces mealtime stress and widens food repertoires, gently." },
@@ -47,7 +47,7 @@ const PathBuilder = () => {
             Tell us what you've <em className="italic font-light text-primary">noticed</em>.
           </h2>
           <p className="text-ink/65 mt-5 max-w-lg leading-relaxed">
-            Choose anything that resonates. We'll sketch a starting roadmap — not a prescription, a possibility.
+            Choose anything that resonates. We'll sketch a starting roadmap - not a prescription, a possibility.
           </p>
         </div>
 

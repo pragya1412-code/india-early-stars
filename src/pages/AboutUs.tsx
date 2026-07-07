@@ -93,7 +93,7 @@ const AboutUs = () => (
         >
           <h2 className="text-2xl font-extrabold text-foreground mb-4">Our Team</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Our multidisciplinary team includes ABA therapists, speech-language pathologists, occupational therapists, child psychologists, and special educators — all dedicated to your child's growth.
+            Our multidisciplinary team includes ABA therapists, speech-language pathologists, occupational therapists, child psychologists, and special educators - all dedicated to your child's growth.
           </p>
           <p className="text-muted-foreground leading-relaxed">
             With over 50 combined years of experience in pediatric therapy, our therapists bring deep expertise and genuine care to every session.

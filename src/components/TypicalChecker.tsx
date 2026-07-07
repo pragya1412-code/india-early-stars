@@ -75,12 +75,12 @@ const TypicalChecker = () => {
     score <= 2
       ? {
           title: "Likely typical, gentle observation",
-          body: "Your responses suggest your child is broadly tracking with peers. Continue noticing the little things — and trust your instinct if anything shifts.",
+          body: "Your responses suggest your child is broadly tracking with peers. Continue noticing the little things - and trust your instinct if anything shifts.",
         }
       : score <= 5
       ? {
           title: "A few quiet signals",
-          body: "Some patterns are worth a calm conversation. A 30-minute consult with our team can help you understand what — if anything — needs gentle support.",
+          body: "Some patterns are worth a calm conversation. A 30-minute consult with our team can help you understand what - if anything - needs gentle support.",
         }
       : {
           title: "Worth a thoughtful look",
@@ -96,7 +96,7 @@ const TypicalChecker = () => {
             Is this <em className="italic font-light text-primary">typical</em>?
           </h2>
           <p className="text-ink/65 mt-5 max-w-xl mx-auto leading-relaxed">
-            Five reassuring questions. No diagnosis, no alarm — just a clearer sense of where things are.
+            Five reassuring questions. No diagnosis, no alarm - just a clearer sense of where things are.
           </p>
         </div>
 

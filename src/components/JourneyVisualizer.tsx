@@ -115,7 +115,7 @@ const JourneyVisualizer = () => {
                 <p className="eyebrow mb-3">{stage.age}</p>
                 <h3 className="serif text-3xl md:text-4xl text-ink mb-6">{stage.label}</h3>
                 <p className="text-ink/65 leading-relaxed max-w-sm">
-                  These are typical signs of unfolding — a quiet ledger, never a verdict.
+                  These are typical signs of unfolding - a quiet ledger, never a verdict.
                 </p>
               </div>
               <div className="grid sm:grid-cols-2 gap-6">

@@ -13,7 +13,7 @@ const steps = [
     icon: Hand,
     minute: "00:05",
     title: "Settling rituals",
-    body: "We begin with a chosen sensory anchor — a smooth pebble, a warm towel, a song — to ground the next forty minutes.",
+    body: "We begin with a chosen sensory anchor - a smooth pebble, a warm towel, a song - to ground the next forty minutes.",
   },
   {
     icon: Smile,
@@ -31,7 +31,7 @@ const steps = [
     icon: BookOpen,
     minute: "00:42",
     title: "Calming close",
-    body: "Predictable goodbye, a small story, a card for parents — three notes on what we saw today.",
+    body: "Predictable goodbye, a small story, a card for parents - three notes on what we saw today.",
   },
   {
     icon: Sparkles,
@@ -55,7 +55,7 @@ const Simulator = () => {
             What an hour with us <em className="italic font-light text-primary">feels</em> like.
           </h2>
           <p className="text-ink/65 mt-5 max-w-lg leading-relaxed">
-            Scroll. The session unfolds the way it does for your child — slowly, predictably, with care.
+            Scroll. The session unfolds the way it does for your child - slowly, predictably, with care.
           </p>
         </div>
 

@@ -34,7 +34,7 @@ const FinalCTA = () => {
           transition={{ delay: 0.3, duration: 1 }}
           className="text-ink/65 text-lg mt-7 max-w-xl mx-auto leading-relaxed"
         >
-          Forty minutes with a senior clinician. No pressure, no labels — just a quiet, considered first step.
+          Forty minutes with a senior clinician. No pressure, no labels - just a quiet, considered first step.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 12 }}
