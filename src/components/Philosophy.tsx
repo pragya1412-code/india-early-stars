@@ -4,17 +4,17 @@ const principles = [
   {
     n: "01",
     t: "Listen before we lead",
-    b: "Every plan begins with the child you know — not the one we assume.",
+    b: "Every plan begins with the child you know - not the one we assume.",
   },
   {
     n: "02",
     t: "Evidence, gently held",
-    b: "ABA, DIR/Floortime, OT, SLT, social cognition — chosen for fit, not fashion.",
+    b: "ABA, DIR/Floortime, OT, SLT, social cognition - chosen for fit, not fashion.",
   },
   {
     n: "03",
     t: "The room matters",
-    b: "Soft acoustics, natural light, sensory zoning — environment as therapy.",
+    b: "Soft acoustics, natural light, sensory zoning - environment as therapy.",
   },
   {
     n: "04",

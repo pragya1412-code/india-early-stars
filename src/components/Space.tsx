@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const rooms = [
   { name: "The Quiet Room", note: "Acoustic foam, dimmable warm light, weighted cushions." },
   { name: "The Movement Studio", note: "Climbing wall, swings, soft proprioceptive zones." },
-  { name: "The Conversation Nook", note: "Two chairs, one table, tea — for parent debriefs." },
+  { name: "The Conversation Nook", note: "Two chairs, one table, tea - for parent debriefs." },
   { name: "The Garden Court", note: "Native plants, sand-play, an open sky for the overwhelmed." },
 ];
 

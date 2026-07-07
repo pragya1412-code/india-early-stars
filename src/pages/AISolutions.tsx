@@ -19,7 +19,7 @@ const features = [
   {
     icon: Lightbulb,
     title: "Smart Therapy Insights",
-    description: "Based on your child's progress data, AI suggests focus areas and therapy adjustments — helping therapists optimize each session for maximum developmental impact.",
+    description: "Based on your child's progress data, AI suggests focus areas and therapy adjustments - helping therapists optimize each session for maximum developmental impact.",
   },
   {
     icon: Gamepad2,
@@ -52,7 +52,7 @@ const AISolutions = () => {
               transition={{ delay: 0.15 }}
               className="text-lg text-secondary-foreground/85 mb-8"
             >
-              We use artificial intelligence to enhance — never replace — our expert therapists. AI helps us deliver more personalized, data-driven care for your child.
+              We use artificial intelligence to enhance - never replace - our expert therapists. AI helps us deliver more personalized, data-driven care for your child.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -105,7 +105,7 @@ const AISolutions = () => {
               AI Supports Therapists, Not Replaces Them
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Our AI tools are designed to empower our expert therapists with better data, smarter insights, and more efficient workflows. Every therapy decision is made by a qualified professional — AI simply helps them make better-informed choices.
+              Our AI tools are designed to empower our expert therapists with better data, smarter insights, and more efficient workflows. Every therapy decision is made by a qualified professional - AI simply helps them make better-informed choices.
             </p>
             <Link to="/book-assessment">
               <Button variant="hero" size="lg">Experience the Difference</Button>
