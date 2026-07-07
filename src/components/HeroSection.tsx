@@ -1,5 +1,5 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { motion, AnimatePresence, animate, useMotionValue, useTransform } from "framer-motion";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Plus } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -50,23 +50,57 @@ const stats: Stat[] = [
   },
 ];
 
+// Extract the leading numeric portion so we can animate the count-up
+const parseNumeric = (s: string): { value: number; prefix: string; suffix: string } => {
+  const m = s.match(/^([^\d]*)([\d.]+)(.*)$/);
+  if (!m) return { value: 0, prefix: "", suffix: s };
+  return { value: parseFloat(m[2]), prefix: m[1], suffix: m[3] };
+};
+
+const CountUp = ({ target, duration = 1.4 }: { target: string; duration?: number }) => {
+  const { value, prefix, suffix } = parseNumeric(target);
+  const mv = useMotionValue(0);
+  const isDecimal = target.includes(".");
+  const rounded = useTransform(mv, (v) =>
+    isDecimal ? v.toFixed(1) : Math.round(v).toLocaleString("en-IN")
+  );
+  useEffect(() => {
+    const controls = animate(mv, value, { duration, ease: [0.16, 1, 0.3, 1] });
+    return controls.stop;
+  }, [mv, value, duration]);
+  return (
+    <span className="serif text-5xl md:text-6xl text-primary leading-none tracking-tight tabular-nums inline-flex items-baseline">
+      <span>{prefix}</span>
+      <motion.span>{rounded}</motion.span>
+      <span>{suffix}</span>
+    </span>
+  );
+};
+
 const RevealCard = ({ stat, index }: { stat: Stat; index: number }) => {
   const [open, setOpen] = useState(false);
   return (
     <motion.button
       initial={{ opacity: 0, y: 16 }}
-      animate={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
       transition={{ duration: 0.6, delay: 0.05 * index }}
       onClick={() => setOpen((v) => !v)}
-      className="group text-left bg-cream/60 backdrop-blur border border-ink/10 rounded-2xl p-6 hover:border-ink/30 hover:shadow-elev transition-all relative overflow-hidden min-h-[170px]"
+      className={`group text-left backdrop-blur border rounded-2xl p-6 transition-all relative overflow-hidden min-h-[200px] ${
+        open
+          ? "bg-ink text-cream border-ink shadow-elev"
+          : "bg-cream/60 border-ink/10 hover:border-ink/30 hover:shadow-elev"
+      }`}
       aria-expanded={open}
     >
-      <div className="absolute top-4 right-4 text-ink/30 group-hover:text-ink/60 transition">
-        <motion.div animate={{ rotate: open ? 45 : 0 }} transition={{ duration: 0.3 }}>
+      <div className={`absolute top-4 right-4 transition ${open ? "text-cream/60" : "text-ink/30 group-hover:text-ink/60"}`}>
+        <motion.div animate={{ rotate: open ? 45 : 0 }} transition={{ duration: 0.35 }}>
           <Plus className="h-4 w-4" />
         </motion.div>
       </div>
-      <p className="eyebrow text-ink/50 mb-3 pr-8">{stat.prompt}</p>
+      <p className={`eyebrow mb-4 pr-8 transition-colors ${open ? "text-cream/60" : "text-ink/50"}`}>
+        {stat.prompt}
+      </p>
       <AnimatePresence mode="wait" initial={false}>
         {!open ? (
           <motion.div
@@ -77,19 +111,24 @@ const RevealCard = ({ stat, index }: { stat: Stat; index: number }) => {
             transition={{ duration: 0.25 }}
           >
             <p className="serif text-2xl md:text-3xl text-ink/25 italic">Reveal the number</p>
-            <p className="text-[11px] text-ink/40 mt-3 tracking-wider uppercase">Tap to see</p>
+            <div className="mt-4 flex items-center gap-2">
+              <span className="h-px w-8 bg-ink/25 group-hover:w-14 transition-all duration-500" />
+              <p className="text-[11px] text-ink/40 tracking-[0.2em] uppercase">Tap to see</p>
+            </div>
           </motion.div>
         ) : (
           <motion.div
             key="shown"
-            initial={{ opacity: 0, y: 8 }}
+            initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           >
-            <p className="serif text-4xl md:text-5xl text-primary leading-none">{stat.number}</p>
-            <p className="text-ink/75 text-sm mt-3 leading-relaxed">{stat.reveal}</p>
-            <p className="text-[10px] text-ink/40 mt-3 tracking-wider uppercase">{stat.source}</p>
+            <CountUp target={stat.number} />
+            <p className="text-cream/80 text-sm mt-4 leading-relaxed">{stat.reveal}</p>
+            <p className="text-[10px] text-cream/40 mt-4 tracking-[0.2em] uppercase">
+              Source · {stat.source}
+            </p>
           </motion.div>
         )}
       </AnimatePresence>
