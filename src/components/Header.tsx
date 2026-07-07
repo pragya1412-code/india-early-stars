@@ -33,11 +33,25 @@ const Header = () => {
       }`}
     >
       <div className="container flex items-center justify-between py-4">
-        <Link to="/" className="flex items-center gap-2.5 group">
-          <span className="serif text-[20px] tracking-tight text-ink leading-none">
-            Early Intervention Studio
-          </span>
+        <Link to="/" className="flex items-center gap-2.5 group" aria-label="Early Intervention Studio - Home">
+          <img
+            src={logoFull.url}
+            alt="Early Intervention Studio"
+            className="hidden sm:block h-11 lg:h-12 w-auto"
+            width="740"
+            height="444"
+            decoding="async"
+          />
+          <img
+            src={logoMark.url}
+            alt="Early Intervention Studio"
+            className="sm:hidden h-10 w-auto"
+            width="450"
+            height="487"
+            decoding="async"
+          />
         </Link>
+
 
         <nav className="hidden lg:flex items-center gap-9">
           {navItems.map((item) => (
