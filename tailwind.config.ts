@@ -40,12 +40,16 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         cream: "hsl(var(--cream))",
+        "cream-deep": "hsl(var(--cream-deep))",
         blush: "hsl(var(--blush))",
         sage: "hsl(var(--sage))",
+        "sage-soft": "hsl(var(--sage-soft))",
         "sage-deep": "hsl(var(--sage-deep))",
         sky: "hsl(var(--sky))",
         butter: "hsl(var(--butter))",
+        "butter-deep": "hsl(var(--butter-deep))",
         ink: "hsl(var(--ink))",
+        "ink-soft": "hsl(var(--ink-soft))",
         whatsapp: "hsl(var(--whatsapp))",
       },
       borderRadius: {
@@ -56,6 +60,7 @@ export default {
       boxShadow: {
         soft: "var(--shadow-soft)",
         elev: "var(--shadow-elev)",
+        ring: "var(--shadow-ring)",
       },
       backgroundImage: {
         "gradient-warm": "var(--gradient-warm)",
