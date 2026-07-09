@@ -63,8 +63,9 @@ const Footer = () => {
         <div className="container py-6 flex flex-col md:flex-row justify-between items-center text-xs text-cream/45 gap-3">
           <p>© {new Date().getFullYear()} Early Intervention Studio</p>
           <div className="flex gap-6">
-            <Link to="/privacy-policy" className="hover:text-cream/80">Privacy</Link>
-            <Link to="/terms-of-service" className="hover:text-cream/80">Terms</Link>
+           <Link to="/privacy-policy" className="hover:text-cream/80">Privacy</Link>
+           <Link to="/terms-of-service" className="hover:text-cream/80">Terms</Link>
+           <Link to="/cookie-preferences" className="hover:text-cream/80">Cookies</Link>
           </div>
         </div>
       </div>

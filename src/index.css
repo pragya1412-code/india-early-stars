@@ -26,7 +26,7 @@
     --secondary-foreground: 36 38% 97%;
 
     --muted: 36 24% 91%;
-    --muted-foreground: 200 18% 34%;
+    --muted-foreground: 200 22% 26%;
 
     /* Warm peach ring (from logo halo) - used as accent surface, not text bg */
     --accent: 22 68% 76%;
@@ -50,9 +50,9 @@
     --sage-deep: 175 38% 24%;   /* deep teal leaf */
     --sky: 190 30% 82%;
     --butter: 22 68% 84%;       /* soft peach */
-    --butter-deep: 22 62% 68%;  /* peach accent for icons/dividers */
+    --butter-deep: 22 58% 42%;  /* peach accent - darkened for AA text/icon contrast */
     --ink: 200 32% 12%;
-    --ink-soft: 200 22% 28%;
+    --ink-soft: 200 24% 24%;
     --whatsapp: 142 52% 40%;
 
     --gradient-warm: linear-gradient(135deg, hsl(var(--cream)), hsl(var(--blush) / 0.55));

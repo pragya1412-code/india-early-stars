@@ -7,7 +7,7 @@ import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { MessageCircle, CheckCircle, Phone } from "lucide-react";
 
-const WHATSAPP_NUMBER = "919999999999";
+const WHATSAPP_NUMBER = "919711331299";
 
 const BookAssessment = () => {
   const { toast } = useToast();
@@ -57,7 +57,7 @@ const BookAssessment = () => {
                     <MessageCircle className="h-4 w-4" /> Follow Up on WhatsApp
                   </Button>
                 </a>
-                <a href="tel:+919999999999">
+                <a href="tel:+919711331299">
                   <Button variant="heroOutline" size="lg" className="w-full gap-2">
                     <Phone className="h-4 w-4" /> Call Us Now
                   </Button>
@@ -143,7 +143,7 @@ const BookAssessment = () => {
               Book Now
             </Button>
             <p className="text-xs text-muted-foreground text-center">
-              Or call us directly at <a href="tel:+919999999999" className="text-primary font-bold">+91 98XX XXX XXX</a>
+              Or call us directly at <a href="tel:+919711331299" className="text-primary font-bold">+91 97113 31299</a>
             </p>
           </motion.form>
         </div>

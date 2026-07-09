@@ -14,6 +14,7 @@ import BookAssessment from "./pages/BookAssessment";
 import Careers from "./pages/Careers";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
+import CookiePreferences from "./pages/CookiePreferences";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/careers" element={<Careers />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/cookie-preferences" element={<CookiePreferences />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

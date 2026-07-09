@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
-const WHATSAPP_NUMBER = "919999999999";
+const WHATSAPP_NUMBER = "919711331299";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -71,7 +71,7 @@ const Contact = () => {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }} className="space-y-6">
             <div className="bg-card rounded-2xl p-7 border border-border/50 shadow-sm space-y-5">
               <h3 className="font-extrabold text-foreground text-lg">Get In Touch</h3>
-              <div className="flex items-start gap-3 text-sm text-muted-foreground"><Phone className="h-4 w-4 mt-0.5 text-primary shrink-0" /> +91 98XX XXX XXX</div>
+              <div className="flex items-start gap-3 text-sm text-muted-foreground"><Phone className="h-4 w-4 mt-0.5 text-primary shrink-0" /> +91 97113 31299</div>
               <div className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MessageCircle className="h-4 w-4 mt-0.5 text-whatsapp shrink-0" />
                 <a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer" className="text-whatsapp font-bold hover:underline">WhatsApp Us</a>

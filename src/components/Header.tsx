@@ -76,16 +76,19 @@ const Header = () => {
         </div>
 
         <button
-          className="lg:hidden text-ink"
+          type="button"
+          className="lg:hidden text-ink inline-flex items-center justify-center min-h-11 min-w-11 -mr-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle menu"
+          aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-nav"
         >
-          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {mobileOpen ? <X className="h-6 w-6" aria-hidden="true" /> : <Menu className="h-6 w-6" aria-hidden="true" />}
         </button>
       </div>
 
       {mobileOpen && (
-        <div className="lg:hidden border-t border-ink/5 bg-background/95 backdrop-blur-xl animate-fade-in">
+        <div id="mobile-nav" className="lg:hidden border-t border-ink/5 bg-background/95 backdrop-blur-xl animate-fade-in">
           <div className="container py-6 flex flex-col gap-1">
             {navItems.map((item) => (
               <Link
