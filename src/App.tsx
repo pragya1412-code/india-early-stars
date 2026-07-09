@@ -14,6 +14,7 @@ import BookAssessment from "./pages/BookAssessment";
 import Careers from "./pages/Careers";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
+import CookiePreferences from "./pages/CookiePreferences";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
