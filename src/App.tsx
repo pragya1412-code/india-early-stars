@@ -37,6 +37,7 @@ const App = () => (
           <Route path="/careers" element={<Careers />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/cookie-preferences" element={<CookiePreferences />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
