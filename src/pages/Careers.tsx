@@ -4,7 +4,7 @@ import careersImg from "@/assets/careers.jpg";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 
-const WHATSAPP_NUMBER = "919999999999";
+const WHATSAPP_NUMBER = "919711331299";
 
 const openings = [
   { title: "ABA Therapist", type: "Full-time", location: "India" },
