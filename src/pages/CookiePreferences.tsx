@@ -51,9 +51,8 @@ const CookiePreferences = () => {
   return (
     <Layout>
       <PageHero
-        eyebrow="Your choices"
         title="Cookie preferences"
-        description="You are in control of how we use cookies on this site. Update your choices anytime."
+        subtitle="You are in control of how we use cookies on this site. Update your choices anytime."
       />
 
       <section className="py-16 lg:py-20">
