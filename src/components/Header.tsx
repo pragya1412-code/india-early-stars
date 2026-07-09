@@ -76,11 +76,14 @@ const Header = () => {
         </div>
 
         <button
-          className="lg:hidden text-ink"
+          type="button"
+          className="lg:hidden text-ink inline-flex items-center justify-center min-h-11 min-w-11 -mr-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle menu"
+          aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-nav"
         >
-          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {mobileOpen ? <X className="h-6 w-6" aria-hidden="true" /> : <Menu className="h-6 w-6" aria-hidden="true" />}
         </button>
       </div>
 
