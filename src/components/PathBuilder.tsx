@@ -16,14 +16,14 @@ const concerns = [
 ];
 
 const map: Record<string, { name: string; why: string }> = {
-  speech: { name: "Speech-Language Therapy", why: "Builds expressive language, comprehension and conversational turn-taking." },
-  social: { name: "Social Cognition Group", why: "Small peer cohorts that nurture friendship, sharing, and reading social cues." },
-  sensory: { name: "Sensory Integration (OT)", why: "Calms an overwhelmed nervous system through graded, playful sensory experiences." },
-  behavior: { name: "Naturalistic ABA", why: "Replaces rigid loops with flexible, meaningful behaviours - within real life." },
-  play: { name: "DIR/Floortime", why: "Joins your child where they are and gently expands shared, joyful play." },
-  school: { name: "School Readiness", why: "A bridge program preparing children for inclusive classroom life." },
-  feeding: { name: "Feeding & Routines", why: "Reduces mealtime stress and widens food repertoires, gently." },
-  motor: { name: "Pediatric OT", why: "Strengthens coordination, balance, handwriting and self-care skills." },
+  speech: { name: "Speech-Language Therapy", why: "Builds language, comprehension and turn-taking." },
+  social: { name: "Social Cognition Group", why: "Small peer groups that nurture friendship and sharing." },
+  sensory: { name: "Sensory Integration (OT)", why: "Calms an overwhelmed nervous system through play." },
+  behavior: { name: "Naturalistic ABA", why: "Replaces rigid loops with flexible, meaningful behaviour." },
+  play: { name: "DIR/Floortime", why: "Joins your child where they are and expands shared play." },
+  school: { name: "School Readiness", why: "A bridge program for inclusive classroom life." },
+  feeding: { name: "Feeding & Routines", why: "Reduces mealtime stress and widens food choices." },
+  motor: { name: "Pediatric OT", why: "Strengthens coordination, balance and self-care skills." },
 };
 
 const PathBuilder = () => {
