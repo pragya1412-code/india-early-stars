@@ -22,10 +22,10 @@ const Outcomes = () => {
   return (
     <section className="py-28 lg:py-36 bg-gradient-warm relative">
       <div className="container">
-        <div className="max-w-2xl mb-16">
+        <div className="max-w-2xl mb-12">
           <p className="eyebrow mb-4">Quiet transformations</p>
           <h2 className="serif text-4xl md:text-5xl text-ink leading-tight text-balance">
-            Stories told in <em className="italic font-light text-primary">small</em> moments.
+            Stories in <em className="italic font-light text-primary">small</em> moments.
           </h2>
         </div>
 

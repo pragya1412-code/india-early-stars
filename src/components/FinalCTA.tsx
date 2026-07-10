@@ -32,9 +32,9 @@ const FinalCTA = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3, duration: 1 }}
-          className="text-ink/65 text-lg mt-7 max-w-xl mx-auto leading-relaxed"
+          className="text-ink/65 text-lg mt-6 max-w-lg mx-auto leading-relaxed"
         >
-          Forty minutes with a senior clinician. No pressure, no labels - just a quiet, considered first step.
+          Forty minutes with a senior clinician. No pressure, no labels - just a quiet first step.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 12 }}
