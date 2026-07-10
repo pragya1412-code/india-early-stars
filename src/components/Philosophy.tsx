@@ -33,8 +33,8 @@ const Philosophy = () => {
             <h2 className="serif text-4xl md:text-5xl text-ink leading-tight text-balance">
               Therapy as a <em className="italic font-light text-primary">quiet</em> craft.
             </h2>
-            <p className="text-ink/65 mt-6 leading-relaxed max-w-md">
-              We believe children grow best in places that feel slow, safe and considered. Our practice is built around four ideas we return to, every day.
+            <p className="text-ink/65 mt-5 leading-relaxed max-w-md">
+              Children grow best in places that feel slow, safe and considered. Four ideas we return to every day.
             </p>
           </div>
           <div className="lg:col-span-7">

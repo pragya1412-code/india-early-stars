@@ -203,7 +203,7 @@ const HeroSection = () => {
               </h2>
             </div>
             <p className="text-sm text-ink/55 max-w-xs">
-              Six numbers every parent and pediatrician should know. Tap any card to reveal.
+              Six numbers every parent should know. Tap any card.
             </p>
           </motion.div>
 
