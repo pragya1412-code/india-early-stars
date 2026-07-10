@@ -90,13 +90,13 @@ const TypicalChecker = () => {
   return (
     <section id="checker" className="py-28 lg:py-36 bg-cream">
       <div className="container max-w-3xl">
-        <div className="text-center mb-14">
+        <div className="text-center mb-12">
           <p className="eyebrow mb-4">A gentle check · 2 minutes</p>
           <h2 className="serif text-4xl md:text-5xl text-ink leading-tight text-balance">
             Is this <em className="italic font-light text-primary">typical</em>?
           </h2>
-          <p className="text-ink/65 mt-5 max-w-xl mx-auto leading-relaxed">
-            Five reassuring questions. No diagnosis, no alarm - just a clearer sense of where things are.
+          <p className="text-ink/65 mt-4 max-w-lg mx-auto leading-relaxed">
+            Five reassuring questions. No diagnosis - just a clearer sense of where things stand.
           </p>
         </div>
 
@@ -164,8 +164,8 @@ const TypicalChecker = () => {
           </AnimatePresence>
         </div>
 
-        <p className="text-center text-xs text-ink/45 mt-6">
-          This is a parent-reflection tool, not a diagnostic instrument.
+        <p className="text-center text-xs text-ink/45 mt-5">
+          A parent reflection tool, not a diagnosis.
         </p>
       </div>
     </section>

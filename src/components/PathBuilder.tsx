@@ -41,13 +41,13 @@ const PathBuilder = () => {
       <div className="absolute -right-24 bottom-10 w-[260px] h-[260px] rounded-full bg-sage blob opacity-40 animate-float-slower" />
 
       <div className="container max-w-5xl relative z-10">
-        <div className="max-w-2xl mb-14">
+        <div className="max-w-2xl mb-12">
           <p className="eyebrow mb-4">A path, made for you</p>
           <h2 className="serif text-4xl md:text-5xl text-ink leading-tight text-balance">
             Tell us what you've <em className="italic font-light text-primary">noticed</em>.
           </h2>
-          <p className="text-ink/65 mt-5 max-w-lg leading-relaxed">
-            Choose anything that resonates. We'll sketch a starting roadmap - not a prescription, a possibility.
+          <p className="text-ink/65 mt-4 max-w-md leading-relaxed">
+            Choose anything that fits. We'll sketch a starting roadmap - not a prescription.
           </p>
         </div>
 
