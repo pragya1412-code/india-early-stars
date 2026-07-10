@@ -168,7 +168,7 @@ const HeroSection = () => {
             transition={{ duration: 1, delay: 0.25 }}
             className="text-ink/70 text-lg md:text-xl mt-7 max-w-2xl leading-relaxed"
           >
-            Early Intervention Studio is a clinical early-intervention practice for children 1–10 with autism and developmental delays. Evidence-led therapy, delivered with the urgency the science demands.
+            A clinical early-intervention practice for children 1–10 with autism and developmental delays. Evidence-led, delivered with urgency.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -203,7 +203,7 @@ const HeroSection = () => {
               </h2>
             </div>
             <p className="text-sm text-ink/55 max-w-xs">
-              Six numbers every parent and pediatrician should know. Tap any card to reveal.
+              Six numbers every parent should know. Tap any card.
             </p>
           </motion.div>
 

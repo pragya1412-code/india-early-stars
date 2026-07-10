@@ -16,14 +16,14 @@ const concerns = [
 ];
 
 const map: Record<string, { name: string; why: string }> = {
-  speech: { name: "Speech-Language Therapy", why: "Builds expressive language, comprehension and conversational turn-taking." },
-  social: { name: "Social Cognition Group", why: "Small peer cohorts that nurture friendship, sharing, and reading social cues." },
-  sensory: { name: "Sensory Integration (OT)", why: "Calms an overwhelmed nervous system through graded, playful sensory experiences." },
-  behavior: { name: "Naturalistic ABA", why: "Replaces rigid loops with flexible, meaningful behaviours - within real life." },
-  play: { name: "DIR/Floortime", why: "Joins your child where they are and gently expands shared, joyful play." },
-  school: { name: "School Readiness", why: "A bridge program preparing children for inclusive classroom life." },
-  feeding: { name: "Feeding & Routines", why: "Reduces mealtime stress and widens food repertoires, gently." },
-  motor: { name: "Pediatric OT", why: "Strengthens coordination, balance, handwriting and self-care skills." },
+  speech: { name: "Speech-Language Therapy", why: "Builds language, comprehension and turn-taking." },
+  social: { name: "Social Cognition Group", why: "Small peer groups that nurture friendship and sharing." },
+  sensory: { name: "Sensory Integration (OT)", why: "Calms an overwhelmed nervous system through play." },
+  behavior: { name: "Naturalistic ABA", why: "Replaces rigid loops with flexible, meaningful behaviour." },
+  play: { name: "DIR/Floortime", why: "Joins your child where they are and expands shared play." },
+  school: { name: "School Readiness", why: "A bridge program for inclusive classroom life." },
+  feeding: { name: "Feeding & Routines", why: "Reduces mealtime stress and widens food choices." },
+  motor: { name: "Pediatric OT", why: "Strengthens coordination, balance and self-care skills." },
 };
 
 const PathBuilder = () => {
@@ -41,13 +41,13 @@ const PathBuilder = () => {
       <div className="absolute -right-24 bottom-10 w-[260px] h-[260px] rounded-full bg-sage blob opacity-40 animate-float-slower" />
 
       <div className="container max-w-5xl relative z-10">
-        <div className="max-w-2xl mb-14">
+        <div className="max-w-2xl mb-12">
           <p className="eyebrow mb-4">A path, made for you</p>
           <h2 className="serif text-4xl md:text-5xl text-ink leading-tight text-balance">
             Tell us what you've <em className="italic font-light text-primary">noticed</em>.
           </h2>
-          <p className="text-ink/65 mt-5 max-w-lg leading-relaxed">
-            Choose anything that resonates. We'll sketch a starting roadmap - not a prescription, a possibility.
+          <p className="text-ink/65 mt-4 max-w-md leading-relaxed">
+            Choose anything that fits. We'll sketch a starting roadmap - not a prescription.
           </p>
         </div>
 

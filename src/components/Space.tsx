@@ -11,13 +11,13 @@ const Space = () => {
   return (
     <section className="py-28 lg:py-36 bg-ink text-cream">
       <div className="container">
-        <div className="max-w-2xl mb-16">
+        <div className="max-w-2xl mb-12">
           <p className="eyebrow text-cream/55 mb-4">The Studio</p>
           <h2 className="serif text-4xl md:text-5xl leading-tight text-balance text-cream">
             A space designed to <em className="italic font-light text-accent">disappear</em>.
           </h2>
-          <p className="text-cream/60 mt-5 max-w-lg leading-relaxed">
-            Four interconnected rooms, each tuned to a child's nervous system. Architecture by Studio Lotus, sensory design by our clinicians.
+          <p className="text-cream/60 mt-4 max-w-md leading-relaxed">
+            Four rooms, each tuned to a child's nervous system. Architecture by Studio Lotus, sensory design by our clinicians.
           </p>
         </div>
 

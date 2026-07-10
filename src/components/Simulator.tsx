@@ -7,37 +7,37 @@ const steps = [
     icon: CloudSun,
     minute: "00:00",
     title: "Arrival",
-    body: "A soft-lit room, low cushions, a familiar therapist who knows your child's name and their favourite small thing.",
+    body: "A soft-lit room, low cushions, a therapist who knows your child's name and their favourite thing.",
   },
   {
     icon: Hand,
     minute: "00:05",
-    title: "Settling rituals",
-    body: "We begin with a chosen sensory anchor - a smooth pebble, a warm towel, a song - to ground the next forty minutes.",
+    title: "Settling",
+    body: "A sensory anchor - a smooth pebble, a warm towel, a song - grounds the next forty minutes.",
   },
   {
     icon: Smile,
     minute: "00:12",
     title: "Play that teaches",
-    body: "Looks like play. Is play. Each prompt is a measured step shaped by ABA, DIR/Floortime and what your child is showing us today.",
+    body: "Each prompt is shaped by ABA, DIR/Floortime and what your child shows us today.",
   },
   {
     icon: MessageCircle,
     minute: "00:28",
     title: "Tiny conversations",
-    body: "A shared glance. A two-word request. The currency of language is exchanged and gently widened.",
+    body: "A shared glance, a two-word request. The currency of language is gently widened.",
   },
   {
     icon: BookOpen,
     minute: "00:42",
-    title: "Calming close",
-    body: "Predictable goodbye, a small story, a card for parents - three notes on what we saw today.",
+    title: "Calm close",
+    body: "Predictable goodbye, a small story, and three notes for parents on what we saw.",
   },
   {
     icon: Sparkles,
     minute: "00:50",
     title: "Parent debrief",
-    body: "Five quiet minutes. What happened, what to gently practise at home, what we'll explore next.",
+    body: "Five quiet minutes: what happened, what to practise at home, what's next.",
   },
 ];
 
@@ -49,13 +49,13 @@ const Simulator = () => {
   return (
     <section id="experience" ref={ref} className="py-28 lg:py-36 bg-background relative">
       <div className="container">
-        <div className="max-w-2xl mb-20">
+        <div className="max-w-2xl mb-16">
           <p className="eyebrow mb-4">Inside a session · 50 minutes</p>
           <h2 className="serif text-4xl md:text-5xl text-ink leading-tight text-balance">
             What an hour with us <em className="italic font-light text-primary">feels</em> like.
           </h2>
-          <p className="text-ink/65 mt-5 max-w-lg leading-relaxed">
-            Scroll. The session unfolds the way it does for your child - slowly, predictably, with care.
+          <p className="text-ink/65 mt-4 max-w-md leading-relaxed">
+            Scroll. The session unfolds slowly, predictably, with care.
           </p>
         </div>
 

@@ -14,43 +14,43 @@ const stages: Stage[] = [
     age: "0–6m",
     label: "Settling",
     tone: "from-blush/40 to-cream",
-    expected: ["Eye contact when held", "Calms to a familiar voice", "Smiles back at you"],
-    watch: ["Rarely turns to sound", "Doesn't make eye contact", "Difficult to soothe consistently"],
+    expected: ["Eye contact when held", "Smiles back at you"],
+    watch: ["Rarely turns to sound", "Limited eye contact"],
   },
   {
     age: "6–12m",
     label: "Reaching out",
     tone: "from-sky/40 to-cream",
-    expected: ["Babbles back and forth", "Reaches for things", "Responds to their name"],
-    watch: ["No babbling", "Doesn't respond to name", "Limited gestures (waving, pointing)"],
+    expected: ["Babbles back and forth", "Responds to their name"],
+    watch: ["No babbling", "Doesn't respond to name"],
   },
   {
     age: "12–18m",
     label: "First words",
     tone: "from-butter/50 to-cream",
-    expected: ["Single words emerging", "Points to share interest", "Walks with confidence"],
-    watch: ["No spoken words", "Doesn't point", "Loses skills already learned"],
+    expected: ["Single words emerging", "Points to share interest"],
+    watch: ["No spoken words", "Doesn't point"],
   },
   {
     age: "18m–3y",
     label: "Pretend & play",
     tone: "from-sage/40 to-cream",
-    expected: ["Two-word phrases", "Pretend feeds a doll", "Joint play with adults"],
-    watch: ["Speech regressing", "Lines up toys repeatedly", "Avoids social games"],
+    expected: ["Two-word phrases", "Pretend play"],
+    watch: ["Speech regressing", "Avoids social games"],
   },
   {
     age: "3–5y",
     label: "Storytellers",
     tone: "from-blush/45 to-cream",
-    expected: ["Tells short stories", "Plays with peers", "Follows two-step instructions"],
-    watch: ["Difficulty with peers", "Echoes phrases out of context", "Strong sensory aversions"],
+    expected: ["Tells short stories", "Follows two-step instructions"],
+    watch: ["Difficulty with peers", "Echoes out of context"],
   },
   {
     age: "5–10y",
     label: "Belonging",
     tone: "from-sage/40 to-cream",
-    expected: ["Reads social cues", "Manages frustration with help", "Forms friendships"],
-    watch: ["Significant school anxiety", "Rigid routines disrupt daily life", "Persistent meltdowns"],
+    expected: ["Reads social cues", "Forms friendships"],
+    watch: ["School anxiety", "Rigid routines disrupt life"],
   },
 ];
 
@@ -61,13 +61,13 @@ const JourneyVisualizer = () => {
   return (
     <section id="journey" className="py-28 lg:py-36 bg-background">
       <div className="container">
-        <div className="max-w-2xl mb-16">
+        <div className="max-w-2xl mb-12">
           <p className="eyebrow mb-4">The Journey · 0–10 years</p>
           <h2 className="serif text-4xl md:text-5xl text-ink leading-tight text-balance">
             Every child unfolds at their own <em className="italic font-light text-primary">pace</em>.
           </h2>
-          <p className="text-ink/65 mt-5 max-w-lg leading-relaxed">
-            Move along the timeline. See what's gently expected, and what is worth a quiet conversation with us.
+          <p className="text-ink/65 mt-4 max-w-md leading-relaxed">
+            Tap the timeline. See what's gently expected, and what's worth noticing.
           </p>
         </div>
 
@@ -113,9 +113,9 @@ const JourneyVisualizer = () => {
             <div className="grid md:grid-cols-2 gap-10">
               <div>
                 <p className="eyebrow mb-3">{stage.age}</p>
-                <h3 className="serif text-3xl md:text-4xl text-ink mb-6">{stage.label}</h3>
+                <h3 className="serif text-3xl md:text-4xl text-ink mb-5">{stage.label}</h3>
                 <p className="text-ink/65 leading-relaxed max-w-sm">
-                  These are typical signs of unfolding - a quiet ledger, never a verdict.
+                  A quiet ledger, never a verdict.
                 </p>
               </div>
               <div className="grid sm:grid-cols-2 gap-6">
