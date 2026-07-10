@@ -61,13 +61,13 @@ const JourneyVisualizer = () => {
   return (
     <section id="journey" className="py-28 lg:py-36 bg-background">
       <div className="container">
-        <div className="max-w-2xl mb-16">
+        <div className="max-w-2xl mb-12">
           <p className="eyebrow mb-4">The Journey · 0–10 years</p>
           <h2 className="serif text-4xl md:text-5xl text-ink leading-tight text-balance">
             Every child unfolds at their own <em className="italic font-light text-primary">pace</em>.
           </h2>
-          <p className="text-ink/65 mt-5 max-w-lg leading-relaxed">
-            Move along the timeline. See what's gently expected, and what is worth a quiet conversation with us.
+          <p className="text-ink/65 mt-4 max-w-md leading-relaxed">
+            Tap the timeline. See what's gently expected, and what's worth noticing.
           </p>
         </div>
 
@@ -113,9 +113,9 @@ const JourneyVisualizer = () => {
             <div className="grid md:grid-cols-2 gap-10">
               <div>
                 <p className="eyebrow mb-3">{stage.age}</p>
-                <h3 className="serif text-3xl md:text-4xl text-ink mb-6">{stage.label}</h3>
+                <h3 className="serif text-3xl md:text-4xl text-ink mb-5">{stage.label}</h3>
                 <p className="text-ink/65 leading-relaxed max-w-sm">
-                  These are typical signs of unfolding - a quiet ledger, never a verdict.
+                  A quiet ledger, never a verdict.
                 </p>
               </div>
               <div className="grid sm:grid-cols-2 gap-6">
