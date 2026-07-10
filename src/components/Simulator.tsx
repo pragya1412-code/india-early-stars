@@ -49,13 +49,13 @@ const Simulator = () => {
   return (
     <section id="experience" ref={ref} className="py-28 lg:py-36 bg-background relative">
       <div className="container">
-        <div className="max-w-2xl mb-20">
+        <div className="max-w-2xl mb-16">
           <p className="eyebrow mb-4">Inside a session · 50 minutes</p>
           <h2 className="serif text-4xl md:text-5xl text-ink leading-tight text-balance">
             What an hour with us <em className="italic font-light text-primary">feels</em> like.
           </h2>
-          <p className="text-ink/65 mt-5 max-w-lg leading-relaxed">
-            Scroll. The session unfolds the way it does for your child - slowly, predictably, with care.
+          <p className="text-ink/65 mt-4 max-w-md leading-relaxed">
+            Scroll. The session unfolds slowly, predictably, with care.
           </p>
         </div>
 
