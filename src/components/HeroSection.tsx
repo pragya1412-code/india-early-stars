@@ -13,40 +13,34 @@ type Stat = {
 
 const stats: Stat[] = [
   {
-    number: "1 in 68",
-    prompt: "How common is autism in India?",
-    reveal: "children in India is on the autism spectrum.",
-    source: "INCLEN Trust, national study",
+    number: "1 in 66",
+    prompt: "How common is ASD in India?",
+    reveal: "children in India has autism spectrum disorder.",
+    source: "ICMR, 2021",
   },
   {
-    number: "18 million",
-    prompt: "How many lives does this touch?",
-    reveal: "Indians live with autism today - most undiagnosed, most unsupported.",
-    source: "WHO & Ministry of Health estimates",
+    number: "4.1 million",
+    prompt: "How many children are affected?",
+    reveal: "children in India live with autism.",
+    source: "National estimates",
   },
   {
-    number: "4.7 years",
-    prompt: "When is autism usually caught?",
-    reveal: "is the average age of diagnosis in India. The window for highest-impact intervention closes at 3.",
-    source: "Indian Journal of Pediatrics",
+    number: "< 2,000",
+    prompt: "How many trained professionals are available?",
+    reveal: "trained professionals serve India's autism community.",
+    source: "Clinical capacity data",
   },
   {
-    number: "90%",
-    prompt: "Does early intervention actually work?",
-    reveal: "of children who begin therapy before age 3 show significant gains in language, learning and independence.",
-    source: "National Institute of Child Health, USA",
+    number: "4-5 years",
+    prompt: "When is autism usually diagnosed?",
+    reveal: "is the average age of diagnosis in India.",
+    source: "ICMR and clinical surveys",
   },
   {
-    number: "< 20%",
-    prompt: "How many get help in time?",
-    reveal: "of Indian children with autism are diagnosed before age 3. Four out of five lose the most critical years.",
-    source: "AIIMS pediatric neurology data",
-  },
-  {
-    number: "2 years",
-    prompt: "What does a delay actually cost?",
-    reveal: "of delayed intervention can reduce expected developmental gains by up to half. Time is the therapy.",
-    source: "Lancet Child & Adolescent Health",
+    number: "3 years",
+    prompt: "When does early intervention have the highest impact?",
+    reveal: "is when intervention has the highest impact.",
+    source: "Early intervention research",
   },
 ];
 
@@ -205,7 +199,7 @@ const HeroSection = () => {
               </h2>
             </div>
             <p className="text-sm text-ink/55 max-w-xs">
-              Six numbers every parent should know. Tap any card.
+              Five numbers every parent should know. Tap any card.
             </p>
           </motion.div>
 
