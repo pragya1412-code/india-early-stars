@@ -8,6 +8,7 @@ import Simulator from "@/components/Simulator";
 import PathBuilder from "@/components/PathBuilder";
 import Outcomes from "@/components/Outcomes";
 import Space from "@/components/Space";
+import BrandAmbassadorSection from "@/components/BrandAmbassadorSection";
 import FinalCTA from "@/components/FinalCTA";
 
 const Index = () => {
@@ -22,6 +23,7 @@ const Index = () => {
       <PathBuilder />
       <Outcomes />
       <Space />
+      <BrandAmbassadorSection />
       <FinalCTA />
     </Layout>
   );
