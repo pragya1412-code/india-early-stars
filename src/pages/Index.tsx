@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import HeroSection from "@/components/HeroSection";
+import ProgressTrackingSection from "@/components/ProgressTrackingSection";
 import Philosophy from "@/components/Philosophy";
 import JourneyVisualizer from "@/components/JourneyVisualizer";
 import TypicalChecker from "@/components/TypicalChecker";
@@ -13,6 +14,7 @@ const Index = () => {
   return (
     <Layout>
       <HeroSection />
+      <ProgressTrackingSection />
       <Philosophy />
       <JourneyVisualizer />
       <TypicalChecker />

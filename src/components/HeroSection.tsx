@@ -144,15 +144,17 @@ const HeroSection = () => {
 
       <div className="container relative z-10 pt-12 pb-24 lg:pt-20 lg:pb-32">
         <div className="max-w-4xl">
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="eyebrow mb-6 inline-flex items-center gap-2"
+            className="mb-6"
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-breathe" />
-            Clinical early intervention
-          </motion.p>
+            <span className="inline-flex items-center gap-2 rounded-full bg-primary px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary-foreground shadow-soft">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary-foreground animate-breathe" />
+              India's First Technology-Driven Early Intervention Centre
+            </span>
+          </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
