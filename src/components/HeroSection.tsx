@@ -133,6 +133,36 @@ const RevealCard = ({ stat, index }: { stat: Stat; index: number }) => {
 const HeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-hero">
+      {/* Subtle neural network watermark */}
+      <svg
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.06] text-primary"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMid slice"
+        viewBox="0 0 1200 800"
+        fill="none"
+      >
+        <g stroke="currentColor" strokeWidth="0.6">
+          <path d="M120 140 L280 220 L200 360 L360 300 L500 200 L620 340 L780 260 L900 400 L1060 320" />
+          <path d="M80 500 L220 420 L340 560 L480 480 L600 600 L740 500 L880 620 L1020 540 L1140 640" />
+          <path d="M180 700 L320 620 L460 720 L580 640 L700 740 L840 660 L980 740" />
+          <path d="M280 220 L340 560" />
+          <path d="M500 200 L480 480" />
+          <path d="M780 260 L740 500" />
+          <path d="M900 400 L880 620" />
+          <path d="M200 360 L220 420" />
+          <path d="M620 340 L600 600" />
+        </g>
+        <g fill="currentColor">
+          {[
+            [120,140],[280,220],[200,360],[360,300],[500,200],[620,340],[780,260],[900,400],[1060,320],
+            [80,500],[220,420],[340,560],[480,480],[600,600],[740,500],[880,620],[1020,540],[1140,640],
+            [180,700],[320,620],[460,720],[580,640],[700,740],[840,660],[980,740],
+          ].map(([cx,cy]) => (
+            <circle key={`${cx}-${cy}`} cx={cx} cy={cy} r="2.5" />
+          ))}
+        </g>
+      </svg>
       <div className="absolute -top-32 -left-32 w-[420px] h-[420px] bg-blush rounded-full blob opacity-40 animate-float-slow" />
       <div className="absolute -bottom-40 -right-32 w-[480px] h-[480px] bg-sage rounded-full blob opacity-30 animate-float-slower" />
 
